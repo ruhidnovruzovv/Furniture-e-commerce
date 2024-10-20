@@ -1,0 +1,74 @@
+footer{
+    color: $mainTextColor;
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        h1{
+            font-size: 5.22rem;
+            font-family: $Didot;
+            margin-bottom: 2rem;
+        }
+        .logo{
+        p{
+            color: rgba(113, 113, 113, 1);
+        }
+        }
+        .phone_mail{
+            width: 60%;
+            ul{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                li{
+                    color: rgba(113, 113, 113, 1);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    footer{
+
+        .footer{
+            display: block !important;
+
+            .logo{
+                h1{
+                    font-size: 2.84rem !important;
+                }
+            }
+            .phone_mail{
+                ul{
+                    display: block !important;
+                    li{
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    footer{
+
+        .footer{
+            display: block !important;
+
+            .logo{
+                h1{
+                    font-size: 2.84rem !important;
+                }
+            }
+            .phone_mail{
+                ul{
+                    display: block !important;
+                    li{
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

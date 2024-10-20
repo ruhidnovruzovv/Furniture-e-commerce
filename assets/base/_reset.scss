@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+    background-color: #EAE6DF;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+  }
+  
+
+  button{
+    cursor: pointer;
+  }
+
+
+@media (max-width: 600) {
+  .container{
+    width: calc(100% - 24px);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+}

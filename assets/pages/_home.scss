@@ -1,0 +1,631 @@
+main {
+  padding-bottom: 10rem;
+  margin-top: 3.5rem;
+  .big_img {
+    position: relative;
+    @include flex(space-between);
+    color: $mainTextColor;
+    .left {
+      h1 {
+        font-size: 7rem;
+        font-family: $Didot;
+        top: 10rem;
+      }
+
+      button {
+        @include flex;
+        gap: 2rem;
+        width: 33rem;
+        height: 5.4rem;
+        background-color: rgba(184, 146, 106, 1);
+        color: $whiteColor;
+        border: none;
+        border-radius: 10px;
+        margin-top: 4rem;
+      }
+    }
+
+    .right {
+      position: relative;
+      width: 70%;
+      img {
+        border-radius: 1rem;
+        width: 100%;
+        object-fit: cover;
+      }
+      .blur {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 35%;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+      }
+    }
+  }
+  .big_img_bottom {
+    margin-top: 6rem;
+    @include flex;
+    gap: 2rem;
+
+    .card {
+      width: calc((100% - 6rem) / 4);
+      position: relative;
+
+      img {
+        height: 19.3rem;
+        width: 100%;
+        border-radius: 1rem;
+        object-fit: cover;
+      }
+      .blur {
+        position: absolute;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: 5.5rem;
+        width: 100%;
+        @include flex;
+        color: $whiteColor;
+        font-family: $Raleway;
+        font-size: 1.6rem;
+        border-radius: 0 0 1rem 1rem;
+      }
+    }
+  }
+  .arrow {
+    @include flex(end);
+    padding: 1rem;
+  }
+  .line {
+    width: 100%;
+    height: 2px;
+    @include flex;
+
+    .first_line {
+      width: 40%;
+      height: 2px;
+      background-color: rgba(184, 146, 106, 1);
+    }
+
+    .last_line {
+      width: 60%;
+      height: 2px;
+      background-color: rgba(212, 200, 190, 1);
+    }
+  }
+  #about {
+    margin-bottom: 14rem;
+    h1 {
+      font-size: 4.8rem;
+      font-family: $Didot;
+      margin-bottom: 4.9rem;
+    }
+    margin-top: 12.8rem;
+    .about_us {
+      @include flex(space-between, end);
+
+      .left {
+        width: 42%;
+        height: 43rem;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 30rem 0.5rem 0.5rem 0.5rem;
+          object-fit: cover;
+        }
+      }
+      .right {
+        width: 55%;
+        font-family: $Raleway;
+        p {
+          width: 82%;
+        }
+        button {
+          width: 33rem;
+          height: 5.4rem;
+          border: 1px solid rgba(184, 146, 106, 1);
+          border-radius: 10px;
+          color: rgba(184, 146, 106, 1);
+          font-size: 1.6rem;
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+  #discount {
+    .discount {
+      background-image: url(../assets/images/bg.png);
+      height: 36.7rem;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      h1 {
+        color: $whiteColor;
+        font-family: $Didot;
+        font-size: 6.4rem;
+      }
+
+      p {
+        font-family: $Raleway;
+        width: 40%;
+        text-align: center;
+        color: $whiteColor;
+      }
+
+      button {
+        @include flex;
+        gap: 2rem;
+        width: 33rem;
+        height: 5.4rem;
+        background-color: rgba(184, 146, 106, 1);
+        color: $whiteColor;
+        border: none;
+        border-radius: 10px;
+        margin-top: 4rem;
+        font-family: $Raleway;
+      }
+    }
+  }
+  #products {
+    margin-top: 12.8rem;
+    .products {
+      h1 {
+        font-size: 4.8rem;
+        font-family: $Didot;
+        margin-bottom: 6rem;
+      }
+
+      .product_cards {
+        @include flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+
+        .card {
+          width: calc((100% - 15rem) / 4);
+          height: 38.1rem;
+          font-family: $Raleway;
+          position: relative;
+          img {
+            height: 26.7rem;
+            width: 100%;
+            border-radius: 1rem;
+            object-fit: cover;
+          }
+          p {
+            font-size: 2rem;
+            margin: 2rem 0;
+          }
+
+          span {
+            color: rgba(184, 146, 106, 1);
+            font-size: 2rem;
+          }
+          .fav {
+            height: 3.8rem;
+            width: 4.6rem;
+            position: absolute;
+            top: 1.6rem;
+            right: 1.6rem;
+            img {
+              width: 4.6rem;
+              height: 3.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  #most_popular {
+    h1 {
+      font-size: 4.8rem;
+      font-family: $Didot;
+      margin: 12.8rem 0 5.8rem 0;
+    }
+    .most_popular {
+      @include flex;
+      flex-wrap: wrap;
+      gap: 5rem;
+
+      .card {
+        width: calc((100% - 15rem) / 4);
+        height: 38.1rem;
+        font-family: $Raleway;
+        position: relative;
+        img {
+          height: 26.7rem;
+          width: 100%;
+          border-radius: 1rem;
+          object-fit: cover;
+        }
+        p {
+          font-size: 2rem;
+          margin: 2rem 0;
+        }
+
+        span {
+          color: rgba(184, 146, 106, 1);
+          font-size: 2rem;
+        }
+        .fav {
+          height: 3.8rem;
+          width: 4.6rem;
+          position: absolute;
+          top: 1.6rem;
+          right: 1.6rem;
+          img {
+            width: 4.6rem;
+            height: 3.8rem;
+          }
+        }
+      }
+    }
+    .arrow {
+      @include flex(end);
+      padding: 1rem;
+    }
+    .line {
+      width: 100%;
+      height: 2px;
+      @include flex;
+
+      .first_line {
+        width: 40%;
+        height: 2px;
+        background-color: rgba(184, 146, 106, 1);
+      }
+
+      .last_line {
+        width: 60%;
+        height: 2px;
+        background-color: rgba(212, 200, 190, 1);
+      }
+    }
+  }
+  #collections {
+    background: rgba(212, 200, 190, 1);
+    padding-bottom: 7.4rem;
+    padding-top: 8.1rem;
+    margin-top: 10rem;
+    .col_title {
+      width: 100%;
+      @include flex(space-between);
+      margin: 0 0 5.9rem 0;
+
+      h1 {
+        font-size: 4.8rem;
+        font-family: $Didot;
+      }
+      span {
+        color: rgba(184, 146, 106, 1);
+        text-decoration: underline;
+      }
+    }
+    .collections {
+      @include flex;
+      gap: 4rem;
+      flex-wrap: wrap;
+
+      .card {
+        width: calc((100% - 8rem) / 3);
+        height: 27rem;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 1rem;
+        }
+
+        .blur {
+          position: absolute;
+          height: 7.3rem;
+          width: 100%;
+          bottom: 0;
+          background: rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          @include flex;
+          color: $whiteColor;
+          border-radius: 0 0 1rem 1rem;
+        }
+      }
+    }
+    .arrow {
+      @include flex(end);
+      padding: 1rem;
+    }
+    .line {
+      width: 100%;
+      height: 2px;
+      @include flex;
+
+      .first_line {
+        width: 40%;
+        height: 2px;
+        background-color: rgba(184, 146, 106, 1);
+      }
+
+      .last_line {
+        width: 60%;
+        height: 2px;
+        background-color: rgba(212, 200, 190, 1);
+      }
+    }
+  }
+  #contact {
+    margin-top: 12.8rem;
+    padding-bottom: 15rem;
+    h1 {
+      font-size: 4.8rem;
+      font-family: $Didot;
+      margin-bottom: 5.9rem;
+    }
+    .contact {
+      @include flex(space-between);
+      .left {
+        width: 40%;
+        @include flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        input {
+          width: 100%;
+          height: 5.4rem;
+          border-radius: 1rem;
+          border: 1px solid rgba(212, 200, 190, 1);
+          padding-left: 1.6rem;
+        }
+        textarea {
+          width: 100%;
+          border-radius: 1rem;
+          border: 1px solid rgba(212, 200, 190, 1);
+          padding-left: 1.6rem;
+          padding-top: 1.6rem;
+        }
+        button {
+          width: 100%;
+          height: 5.4rem;
+          border: none;
+          background-color: rgba(184, 146, 106, 1);
+          color: $whiteColor;
+          border-radius: 1rem;
+        }
+      }
+    }
+    .right {
+      width: 51%;
+      img {
+        width: 100%;
+        border-radius: 5px 5px 300px 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    .big_img {
+      flex-direction: column;
+
+      .left {
+        h1 {
+          position: static;
+          font-size: 3.2rem;
+          width: fit-content;
+          margin-bottom: 2rem;
+        }
+        button {
+          margin-top: 2rem;
+          width: 100%;
+        }
+      }
+      .right {
+        width: 100%;
+        margin-top: 5rem;
+        img {
+          width: 100%;
+        }
+        .blur {
+          display: none;
+        }
+      }
+    }
+  }
+  #big_img {
+    .big_img_bottom {
+      flex-wrap: wrap;
+
+      .card {
+        width: 100%;
+        height: 22rem;
+      }
+    }
+  }
+  #about {
+    h1 {
+      font-size: 2.4rem !important;
+    }
+    .about_us {
+      @include flex(center, center);
+
+      flex-direction: column;
+      .left {
+        width: 100% !important;
+        height: 17.4rem !important;
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .right {
+        width: 100% !important;
+
+        p {
+          width: 100% !important;
+          height: 48.3rem;
+          overflow: hidden;
+          margin-top: 3rem;
+          line-height: 24px;
+          text-align: justify;
+        }
+        button {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  #discount {
+    .discount {
+      h1 {
+        font-size: 2.4rem !important;
+      }
+      p {
+        width: 95% !important;
+      }
+      button {
+        width: 90% !important;
+      }
+    }
+  }
+  #products {
+    .products {
+      h1 {
+        font-size: 2.4rem !important;
+      }
+      .product_cards {
+        flex-wrap: wrap;
+
+        .card {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  #most_popular {
+    h1 {
+      font-size: 2.4rem !important;
+    }
+    .most_popular {
+      flex-wrap: wrap;
+
+      .card {
+        width: 100% !important;
+      }
+    }
+  }
+  #collections {
+    .col_title {
+      h1 {
+        font-size: 2.4rem !important;
+      }
+    }
+    .collections {
+      flex-wrap: wrap;
+      .card {
+        width: 100% !important;
+      }
+    }
+  }
+
+  #contact {
+    h1 {
+      font-size: 2.4rem !important;
+    }
+    .contact {
+      display: block !important;
+      .left {
+        width: 100% !important;
+      }
+      .right {
+        width: 100% !important;
+        margin-top: 5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  main {
+    .big_img {
+      .left {
+        h1 {
+          font-size: 4rem;
+        }
+      }
+    }
+    #products {
+      .products {
+        .product_cards {
+          flex-wrap: wrap;
+
+          .card {
+            width: calc((100% - 5rem) / 2);
+          }
+        }
+      }
+    }
+
+    #most_popular {
+      .most_popular {
+        flex-wrap: wrap;
+
+        .card {
+          width: calc((100% - 5rem) / 2) !important;
+        }
+      }
+    }
+    #contact {
+      .contact {
+        display: block !important;
+        .left {
+          width: 100% !important;
+        }
+        .right {
+          width: 100% !important;
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  main {
+    .big_img {
+      .left {
+        h1 {
+          font-size: 4rem;
+        }
+      }
+    }
+    #products {
+      .products {
+        .product_cards {
+          flex-wrap: wrap;
+
+          .card {
+            width: calc((100% - 10rem) / 3);
+          }
+        }
+      }
+    }
+  }
+  #most_popular {
+    .most_popular {
+      flex-wrap: wrap;
+
+      .card {
+        width: calc((100% - 10rem) / 3) !important;
+      }
+    }
+  }
+}

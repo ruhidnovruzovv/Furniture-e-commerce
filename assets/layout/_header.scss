@@ -1,0 +1,112 @@
+header{
+    .nav_top{
+        @include flex(space-between);
+        padding: 1.8rem 0;
+        .menu{
+            display: none;
+        }
+
+
+        .btn{
+            @include flex;
+            gap: 3rem;
+            button{
+                border-radius: 5px;
+                border: 1px solid rgba(212, 200, 190, 1);
+                background-color: transparent;
+                padding: 1rem;
+                color: $mainTextColor;
+            }
+        }
+        .logo h1{
+            font-family: "GFS Didot", serif;
+            font-size: 3.6rem;
+            color: $mainTextColor;
+        }
+        .user{
+            @include flex;
+            gap: 3rem;
+        }
+    }
+    .nav_bottom{
+        @include flex;
+        margin-top: 2rem;
+
+        ul{
+            @include flex;
+            gap: 7rem;
+            li{
+                color: $mainTextColor;
+                font-family: "Raleway", sans-serif;
+            }
+            .home{
+                padding-bottom: 0.5rem;
+                border-bottom: 1px solid rgba(184, 146, 106, 1);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    header{
+      .nav_top{
+        .btn{
+            display: none;
+        }
+        .user{
+            display: none;
+        }
+        .menu{
+           @include flex;
+           gap: 2.5rem;
+           i{
+            font-size: 2.2rem
+           }
+        }
+        .logo{
+            @include flex(space-between);
+            width: 100%;
+            h1{
+                font-size: 2.48rem;
+            }
+        }
+      }
+      .nav_bottom{
+        display: none;
+      }
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 768px) {
+    header{
+        .nav_top{
+          .btn{
+              display: none;
+          }
+          .user{
+              display: none;
+          }
+          .menu{
+             @include flex;
+             gap: 2.5rem;
+             i{
+              font-size: 2.2rem
+             }
+          }
+          .logo{
+              @include flex(space-between);
+              width: 100%;
+              h1{
+                  font-size: 2.48rem;
+              }
+          }
+        }
+        .nav_bottom{
+          display: none;
+        }
+      }
+    }
+  
+  @media (min-width: 769px) and (max-width: 1200px) {
+  }
